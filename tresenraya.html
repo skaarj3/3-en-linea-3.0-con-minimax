@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en línea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <h1><i class="fas fa-gamepad"></i> Tres en línea</h1>
+    <h2 id="textoModoJuego">¿Estás preparado? Elije el modo de juego</h2>
+
+    <div id="tipoJuego">
+        <button id="pvp" type="button" class="btn btn-outline-danger">Player Vs. Player <i
+                class="fas fa-people-arrows"></i></button>
+        <button id="pve" type="button" class="btn btn-outline-danger">Player Vs. IA <i
+                class="fas fa-robot"></i></button>
+        <br>
+        <br>
+        <div id="facilDificil">
+            <button id="botonPveFacil" type="button" class="btn btn-outline-secondary">Modo fácil <i
+                    class="fas fa-shapes"></i></button>
+            <button id="botonPveDificil" type="button" class="btn btn-outline-secondary">Modo difícil <i
+                    class="fas fa-fire-alt"></i></button>
+        </div>
+    </div>
+    </br>
+    <div class="progress w-75" id="progress">
+        <div id="barra" class="progress-bar progress-bar-animated progress-bar-striped inicio animacion"
+            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Cargando...</div>
+    </div>
+    </br>
+    <div id="modoDeJuego">variable modoDeJuego</div>
+    <div id="modoJuego">id modoJuego</div>
+    </br></br>
+    <div width="800">
+        <table id="cuadro">
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="endgame">
+        <div class="text"></div>
+    </div>
+    <h2 id="vencedor"><i class="fas fa-trophy"></i> ¡Felicidades, has ganado! <i class="fas fa-trophy"></i></h2>
+    <button id="reinicio" onclick="reiniciar()">Reiniciar</button>
+
+</body>
+
+</html>
